@@ -3,3 +3,4 @@ node_modules
 backend/venv
 backend/__pycache__
 backend/oukhdil.db
+backend/
