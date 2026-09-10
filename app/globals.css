@@ -1,0 +1,44 @@
+
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.5rem;
+}
+
+:root {
+  color-scheme: light;
+  --background: #f5f8fc;
+  --foreground: #092856;
+  --card: #ffffff;
+  --card-foreground: #092856;
+  --primary: #092856;
+  --primary-foreground: #ffffff;
+  --muted: #eaf1f8;
+  --muted-foreground: #58708f;
+  --border: #dce6f1;
+  --ring: #83b900;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; background: #f5f8fc; }
+body { margin: 0; background: var(--background); color: var(--foreground); font-family: var(--font-inter), Arial, sans-serif; }
+button, a, input { font: inherit; }
+button { cursor: pointer; }
+::selection { background: #b5ec08; color: #092856; }
