@@ -33,7 +33,7 @@
   --muted: #eaf1f8;
   --muted-foreground: #58708f;
   --border: #dce6f1;
-  --ring: #83b900;
+  --ring: #6a6e73;
 }
 
 * { box-sizing: border-box; }
@@ -41,4 +41,7 @@ html { scroll-behavior: smooth; background: #f5f8fc; }
 body { margin: 0; background: var(--background); color: var(--foreground); font-family: var(--font-inter), Arial, sans-serif; }
 button, a, input { font: inherit; }
 button { cursor: pointer; }
-::selection { background: #b5ec08; color: #092856; }
+::selection {
+    background-color: #6a6e73;
+    color: white;
+}
