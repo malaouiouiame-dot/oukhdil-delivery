@@ -1,5 +1,5 @@
 'use client'
-
+import HoursWidget from "@/components/ui/HoursWidget";
 import { useState } from 'react'
 import {
   ArrowRight,
@@ -78,6 +78,8 @@ export default function Page() {
         </div>
         {menuOpen && <nav className="flex flex-col gap-4 border-t border-[#eee0d0] px-5 py-4 text-sm font-bold md:hidden"><a href="#services" onClick={() => setMenuOpen(false)}>Services</a><a href="#tarifs" onClick={() => setMenuOpen(false)}>Tarifs</a><a href="#fonctionnement" onClick={() => setMenuOpen(false)}>Comment ça marche</a></nav>}
       </header>
+      
+      <HoursWidget />
 
       <section id="accueil" className="relative isolate overflow-hidden bg-[#0d2340]">
         <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 py-14 lg:grid-cols-[1.08fr_.92fr] lg:px-8 lg:py-20">
@@ -171,7 +173,7 @@ export default function Page() {
                 onClick={handleConfirm}
                 className="inline-flex items-center gap-2 rounded-xl bg-[#f5821f] px-4 py-3 text-sm font-black text-white hover:bg-[#e06f0f]"
               >
-                <MessageCircle size={17} /> Confirmer
+                <MessageCircle size={17} /> Confirmer 
               </button>
             </div>
           </div>
